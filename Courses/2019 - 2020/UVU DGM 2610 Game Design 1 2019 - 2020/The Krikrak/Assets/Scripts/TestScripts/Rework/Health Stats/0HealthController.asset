@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e408e248f319c9a48b71ef6b1758ccd1, type: 3}
+  m_Name: 0HealthController
+  m_EditorClassIdentifier: 
+  CurrentF: {fileID: 11400000, guid: 15c0167c7d37be7419add6a4643276c9, type: 2}
+  ResetF: {fileID: 11400000, guid: 82f08582525604c459caeb75b7ec352b, type: 2}
+  MinimumF: {fileID: 11400000, guid: fadcdcb1247a8d343b8237f22a97d30b, type: 2}
+  MaximumF: {fileID: 11400000, guid: 4120ea814d49a1a4bbfcc63a061d9669, type: 2}
+  ChangeRateF: {fileID: 11400000, guid: 95255b8adcc131943b55d94eaa56fa2d, type: 2}

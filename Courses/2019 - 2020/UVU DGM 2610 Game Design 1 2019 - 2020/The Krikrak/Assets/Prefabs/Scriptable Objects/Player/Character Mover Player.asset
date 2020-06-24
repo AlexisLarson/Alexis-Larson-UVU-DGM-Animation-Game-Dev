@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54cd78d02c38fe9448c91d78c8bb955a, type: 3}
+  m_Name: Character Mover Player
+  m_EditorClassIdentifier: 
+  GameOverToggle: {fileID: 11400000, guid: 61cb1bbee20c3d04792439332af76656, type: 2}
+  moveData: {fileID: 11400000, guid: 1358d735bb5206b49a2cc2b8ccf8a298, type: 2}
+  healthData: {fileID: 11400000, guid: b78392c932493d341bb2fb1a42ab0c97, type: 2}
+  staminaData: {fileID: 11400000, guid: 733d96bc8eb76054bb65515751070393, type: 2}
+  OxygenData: {fileID: 11400000, guid: 32586d0acfe247e488e9aaec46a8460f, type: 2}
+  weaponData: {fileID: 11400000, guid: b46b4e524c828964c8ac119c321bcd18, type: 2}
+  gravityData: {fileID: 11400000, guid: 59c246385c72d8a4285ff1414ff44f29, type: 2}
+  jumpData: {fileID: 11400000, guid: 5bf74068bbaeb9b448e4a8bfb022eb9a, type: 2}
+  jumpCount: {fileID: 11400000, guid: 994d121b1c3dc31458238f90447a34b0, type: 2}
+  AttackSpeedData: {fileID: 11400000, guid: 3e33d2aa1274a094bb63d1ce7b86cbbe, type: 2}
+  inRange: 0

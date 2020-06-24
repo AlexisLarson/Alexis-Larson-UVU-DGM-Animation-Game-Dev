@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e408e248f319c9a48b71ef6b1758ccd1, type: 3}
+  m_Name: 0OxygenController
+  m_EditorClassIdentifier: 
+  CurrentF: {fileID: 11400000, guid: 2e3acc52539d89447b7c49e38480277c, type: 2}
+  ResetF: {fileID: 11400000, guid: 316cbc937f936b84c80221493b7f5731, type: 2}
+  MinimumF: {fileID: 11400000, guid: daaa0bb1196621847977e0b6ded71169, type: 2}
+  MaximumF: {fileID: 11400000, guid: 266514887626ad14d8acd5bc506051f0, type: 2}
+  ChangeRateF: {fileID: 11400000, guid: a412cfb4caa38294f8e2a888cd1aeec6, type: 2}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e408e248f319c9a48b71ef6b1758ccd1, type: 3}
+  m_Name: 0StaminaController
+  m_EditorClassIdentifier: 
+  CurrentF: {fileID: 11400000, guid: 267877a76b8100b44bbfdb71df27a849, type: 2}
+  ResetF: {fileID: 11400000, guid: 5ab3c17897f580b4c8b88e2184f198f5, type: 2}
+  MinimumF: {fileID: 11400000, guid: b8fd23bbf0d6ea9448dde06959b081b1, type: 2}
+  MaximumF: {fileID: 11400000, guid: 93907fc8ef08f07438db99ac773d2ef7, type: 2}
+  ChangeRateF: {fileID: 11400000, guid: 9f3e9e44d73c0b54c914a2517ecd3b84, type: 2}

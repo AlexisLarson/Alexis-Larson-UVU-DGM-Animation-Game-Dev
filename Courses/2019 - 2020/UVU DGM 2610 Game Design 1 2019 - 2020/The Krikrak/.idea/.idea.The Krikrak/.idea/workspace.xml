@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c6a7a529-2ae5-481e-83bb-a3ad8f9536ee" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/EventManagers/TriggerEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/EventManagers/StartEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/TeleTyperController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/EventManagers/MouseEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/MouseButtonData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/BoolData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/SceneCtrl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/SceneData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/ImageManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/TeleTyperTextObj.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/QuitGame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/ActiveStateController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/MenuObj.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/MenuController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/CharacterMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/AINavMesh.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/KeyCodeObj.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/TeleTyper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/AnimManager.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjScripts/TextPrinter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjScripts/FloatData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/AINavMesh.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjScripts/SceneData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjScripts/NameId.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjScripts/Collectible.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjScripts/MasterManagerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjScripts/CharacterMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjScripts/ConsoleTextData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjScripts/MasterManagerDatas/MasterManagerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjScripts/GameAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/GameActionHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/BoolDatas/BoolData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/OnMouseEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/MouseEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/ScriptableObjEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/ScriptableObjEventData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/EventData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/EventDatas/MouseEventDatas/TestMousecontrol.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/EventDatas/MouseEventDatas/MouseDownEventData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/EventDatas/EventMonoBehaviors/EventMonoTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/EventDatas/EventData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityEditorScripts/ScriptableObjectsMenuEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/MasterManger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/MasterScriptableObjectManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ScriptableObjectsMenuEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/FloatDatas/FloatObj.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/FloatDatas/FloatReset.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/FloatDatas/Rework/FloatReset.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/FloatDatas/Rework/FloatController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/TeleTyper2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/TeleTyperController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/TeleTyperTextObj.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/EventManagers/StartEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/QuitGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/TeleTyper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/CharacterMoverDatas/CharacterMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/FloatDatas/Rework/FloatObj.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/MenuDatas/MenuObj.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/KeyCodeObjs/KeyCodeObj.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/EventManagers/TriggerEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/EventManagers/MouseEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/MenuDatas/MenuController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/MouseButtonData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/MenuObj.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/MenuController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/CharacterMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/ActiveStateController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/SceneCtrl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjs/SceneData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/AnimManager.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XJU9lpS8vJsyI6V6vakhULfjzb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6a7a529-2ae5-481e-83bb-a3ad8f9536ee" name="Default Changelist" comment="" />
+      <created>1580763543531</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580763543531</updated>
+      <workItem from="1580763548701" duration="4150000" />
+      <workItem from="1580829962838" duration="228000" />
+      <workItem from="1580838587170" duration="2564000" />
+      <workItem from="1581434228749" duration="1884000" />
+      <workItem from="1581455216066" duration="1540000" />
+      <workItem from="1581459667335" duration="6082000" />
+      <workItem from="1581648052699" duration="12781000" />
+      <workItem from="1581661716929" duration="1292000" />
+      <workItem from="1581698056471" duration="903000" />
+      <workItem from="1582064810222" duration="4841000" />
+      <workItem from="1582252591600" duration="1690000" />
+      <workItem from="1583026504984" duration="4151000" />
+      <workItem from="1583448578520" duration="10386000" />
+      <workItem from="1583863013713" duration="3877000" />
+      <workItem from="1583956928674" duration="15001000" />
+      <workItem from="1584031420171" duration="5230000" />
+      <workItem from="1585241254505" duration="6319000" />
+      <workItem from="1585420281545" duration="1607000" />
+      <workItem from="1585786574306" duration="658000" />
+      <workItem from="1586452750208" duration="7320000" />
+      <workItem from="1586470545655" duration="4334000" />
+      <workItem from="1586541454349" duration="4099000" />
+      <workItem from="1586546240105" duration="6413000" />
+      <workItem from="1586553113888" duration="9330000" />
+      <workItem from="1586974362031" duration="3854000" />
+      <workItem from="1586988888880" duration="9698000" />
+      <workItem from="1587082940290" duration="304000" />
+      <workItem from="1587083910789" duration="9447000" />
+      <workItem from="1587495448173" duration="6166000" />
+      <workItem from="1587509736269" duration="40000" />
+      <workItem from="1587509932395" duration="1893000" />
+      <workItem from="1587516673004" duration="1131000" />
+      <workItem from="1587670179062" duration="5530000" />
+      <workItem from="1588209638553" duration="4754000" />
+      <workItem from="1588264052024" duration="3336000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
