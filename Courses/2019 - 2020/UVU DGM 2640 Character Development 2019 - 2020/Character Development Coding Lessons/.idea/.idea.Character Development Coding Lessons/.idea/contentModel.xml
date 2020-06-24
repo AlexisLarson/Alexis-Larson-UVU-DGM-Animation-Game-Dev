@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Alexis Larson\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Alexis Larson\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Character Development Coding Lessons.-978299814.00" t="ExcludeRecursive" />
+    <e p="D:\Documents\UVU-DGM-2640-Character-Development-2019---2020\Character Development Coding Lessons" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="AnimBehaviour.cs" t="Include" />
+          <e p="CharacterControllers" t="Include">
+            <e p="AnimController.cs" t="Include" />
+            <e p="Movement.cs" t="Include" />
+            <e p="PCMovePractice.cs" t="Include" />
+          </e>
+          <e p="Conceptualizing" t="Include">
+            <e p="AnimationController.cs" t="Include" />
+            <e p="EventActionHandler.cs" t="Include" />
+            <e p="IntInventorySystem.cs" t="Include" />
+          </e>
+          <e p="Interfaces" t="Include">
+            <e p="Interfaces.cs" t="Include" />
+          </e>
+          <e p="Practices" t="Include">
+            <e p="Destroy.cs" t="Include" />
+            <e p="DoWork.cs" t="Include" />
+            <e p="EventTrigger.cs" t="Include" />
+            <e p="ImgController.cs" t="Include" />
+            <e p="MatchID.cs" t="Include" />
+            <e p="MouseEvent.cs" t="Include" />
+            <e p="NameID.cs" t="Include" />
+          </e>
+          <e p="ScriptableObjects" t="Include">
+            <e p="AIMoveAway.cs" t="Include" />
+            <e p="DebugData.cs" t="Include" />
+            <e p="DebugObject.cs" t="Include" />
+            <e p="FloatData.cs" t="Include" />
+            <e p="GameAction.cs" t="Include" />
+            <e p="InstancerObj.cs" t="Include" />
+            <e p="LightData.cs" t="Include" />
+            <e p="LocationData.cs" t="Include" />
+            <e p="TriggerData" t="Include">
+              <e p="AllTriggerData.cs" t="Include" />
+              <e p="EnterTriggerData.cs" t="Include" />
+              <e p="ExitTriggerData.cs" t="Include" />
+              <e p="StayTriggerData.cs" t="Include" />
+            </e>
+            <e p="ValueData.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Character Development Coding Lessons.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
