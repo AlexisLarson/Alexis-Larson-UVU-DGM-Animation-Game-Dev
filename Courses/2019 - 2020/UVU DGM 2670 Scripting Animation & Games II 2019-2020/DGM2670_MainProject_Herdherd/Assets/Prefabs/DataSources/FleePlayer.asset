@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 335c5f51279f86b419e05e43b0117acb, type: 3}
+  m_Name: FleePlayer
+  m_EditorClassIdentifier: 
+  Fleer: {fileID: 1060371510900200346, guid: 4f0e73d374e04094789234179e79c1e5, type: 3}
+  FleeThis: {fileID: 3498008428875106497, guid: edeb53967f7fb0445a0d54efe888d458,
+    type: 3}
+  FleeDistance: 4
