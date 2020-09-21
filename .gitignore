@@ -64,7 +64,6 @@ crashlytics-build.properties
 *.meta
 *.psd
 *.spp
-*.zpr
 
 *.json
 
