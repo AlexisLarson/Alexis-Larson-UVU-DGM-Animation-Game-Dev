@@ -1,0 +1,156 @@
+//Add Array of Numbers together
+
+proc float Addition(float $AddFloat[])
+{
+		float $AddEquals = $AddFloat[0];
+		
+		for ( $i = 0; $i < size($AddFloat); $i++)
+		{
+			$AddEquals += $AddFloat[$i];
+		}
+		
+		return $AddEquals;
+}
+
+float $AddFloat = Addition({1,1,2,3,5,8,13});
+
+print $AddFloat;
+
+//Subtract Array of Numbers Apart
+
+proc float Subtraction(float $SubFloat[])
+{
+		float $SubEquals = $SubFloat[0];
+		
+		for ( $i = 1; $i < size($SubFloat); $i++)
+		{
+			$SubEquals -= $SubFloat[$i];
+		}
+		
+		return $SubEquals;
+}
+
+float $SubFloat = Subtraction({1,1,2,3,5,8,13});
+
+print $SubFloat;
+
+
+//Multiply Array of Numbers Together
+
+proc float Multiplication(float $MultFloat[])
+{
+		float $MultEquals = $MultFloat[0];
+		
+		for ( $i = 0; $i < size($MultFloat); $i++)
+		{
+			$MultEquals *= $MultFloat[$i];
+		}
+		
+		return $MultEquals;
+}
+
+float $MultFloat = Multiplication({1,1,2,3,5,8,13});
+
+print $MultFloat;
+
+
+
+//Divide Array of Numbers Apart
+
+proc float Division(float $DivFloat[])
+{
+		float $DivEquals = $DivFloat[0];
+		
+		for ( $i = 1; $i < size($DivFloat); $i++)
+		{
+			$DivEquals /= $DivFloat[$i];
+		}
+		
+		return $DivEquals;
+}
+
+float $DivFloat = Division({1,1,2,3,5,8,13});
+
+print $DivFloat;
+
+//Raise number to power of Number)
+
+proc float PowerMult(float $BaseFloat, float $PowerFloat)
+{
+	float $PowEquals = $BaseFloat;
+	
+	for ($i = 1; $i < $PowerFloat; $i++)
+	{
+		$PowEquals *= $BaseFloat;
+	}
+	return $PowEquals;	
+}
+
+float $PowerFloat = PowerMult (10,2);
+
+print $PowerFloat;
+
+//Average of sum of floats
+
+proc float Average(float $AllFloats[])
+{
+	float $FloatsEquals = $AllFloats[0];
+	
+	for ($i = 1; $i < size($AllFloats); ++$i)
+	{
+		$FloatsEquals += $AllFloats[$i];
+	}
+	
+	$FloatsEquals /= size($AllFloats);
+	
+	return $FloatsEquals;
+}
+
+float $AllFloats = Average({1,1,2,3,5,8,13});
+
+print $AllFloats;
+
+//Find median of array
+	
+proc float Median(float $FindMedianFloat[])
+{
+	float $SortedFloats[] = `sort $FindMedianFloat`;
+
+	float $MedianEquals;
+	
+	if (size($SortedFloats) % 2 == 1)
+	{
+		$MedianEquals = $SortedFloats[size($FindMedianFloat) / 2];
+	}
+	else
+	{
+		$MedianEquals = ($SortedFloats[(size($FindMedianFloat) + 1) / 2] + $SortedFloats[(size($FindMedianFloat) - 1) / 2]);
+	}
+	
+	return $MedianEquals;
+}
+
+float $FindMedianFloat = Median({1,5,2,8,13,1,3});
+
+print $FindMedianFloat;
+
+//Find Mode of array
+
+proc float Mode(float $FindModeFloat[])
+{
+	float $SortedFloats[] = `sort $FindModeFloat`;
+
+	float $ModeEquals = $FindModeFloat[0];
+	
+	float $RepeatedFloatCount = 0;
+	
+	float $HighestFloatCount = 0;
+	
+	for($i = 0; $i < size($FindModeFloat); ++$i)
+	{
+		
+	}
+}
+float $FindModeFloat = Mode({1,5,2,8,13,1,3});
+
+print $FindModeFloat;
