@@ -138,13 +138,11 @@ print $FindMedianFloat;
 
 proc float Mode(float $FindModeFloat[])
 {
-	float $SortedFloats[] = `sort $FindModeFloat`;
-
 	float $ModeEquals = $FindModeFloat[0];
 	
-	float $RepeatedFloatCount = 0;
+	float $CountFloatFrequency = 0;
 	
-	float $HighestFloatCount = 0;
+	float $HighestFloatFrequency = 0;
 	
 	for($i = 0; $i < size($FindModeFloat); ++$i)
 	{
