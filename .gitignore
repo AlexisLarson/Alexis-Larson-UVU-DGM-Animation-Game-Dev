@@ -62,7 +62,6 @@ sysinfo.txt
 crashlytics-build.properties
 
 *.meta
-*.psd
 *.spp
 
 *.json
