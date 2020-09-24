@@ -140,13 +140,29 @@ proc float Mode(float $FindModeFloat[])
 {
 	float $ModeEquals = $FindModeFloat[0];
 	
-	float $CountFloatFrequency = 0;
+	int $CountFloatFrequency = 0;
 	
-	float $HighestFloatFrequency = 0;
+	int $HighestFloatFrequency = 0;
 	
 	for($i = 0; $i < size($FindModeFloat); ++$i)
 	{
+		$CountFloatFrequency = 0;
 		
+		for ($CheckCurrentFloat = $i; $CheckCurrentFloat < size($FindModeFloat); ++$CheckCurrentFloat)
+		{
+			if ($FindModeFloat[$i] == $FindModeFloat[$CheckCurrentFloat])
+			{
+				$CountFloatFrequency++;
+				
+				if ($CountFloatFrequency >= $HighestFloatFrequency)
+				{
+					$HighestFloatFrequency = $CountFloatFrequency;
+					$ModeEquals = $FindModeFloat[$i];
+				}								
+			}
+		}
+		
+		return $ModeEquals;
 	}
 }
 float $FindModeFloat = Mode({1,5,2,8,13,1,3});
