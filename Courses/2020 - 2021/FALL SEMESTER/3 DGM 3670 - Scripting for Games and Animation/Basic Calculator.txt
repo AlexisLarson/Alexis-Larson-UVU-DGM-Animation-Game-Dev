@@ -1,163 +1,132 @@
 //Add Array of Numbers together
 
-proc float Addition(float $AddFloat[])
+global proc float Addition(float $InputValues[])
 {
-		float $AddEquals = $AddFloat[0];
+		float $AddEquals = $InputValues[0];
 		
-		for ( $i = 0; $i < size($AddFloat); $i++)
+		for ( $i = 0; $i < size($InputValues); $i++)
 		{
-			$AddEquals += $AddFloat[$i];
+			$AddEquals += $InputValues[$i];
 		}
 		
 		return $AddEquals;
 }
 
-float $AddFloat = Addition({1,1,2,3,5,8,13});
-
-print $AddFloat;
-
 //Subtract Array of Numbers Apart
 
-proc float Subtraction(float $SubFloat[])
+global proc float Subtraction(float $InputValues[])
 {
-		float $SubEquals = $SubFloat[0];
+		float $SubEquals = $InputValues[0];
 		
-		for ( $i = 1; $i < size($SubFloat); $i++)
+		for ( $i = 1; $i < size($InputValues); $i++)
 		{
-			$SubEquals -= $SubFloat[$i];
+			$SubEquals -= $InputValues[$i];
 		}
 		
 		return $SubEquals;
 }
 
-float $SubFloat = Subtraction({1,1,2,3,5,8,13});
-
-print $SubFloat;
-
-
 //Multiply Array of Numbers Together
 
-proc float Multiplication(float $MultFloat[])
+global proc float Multiplication(float $InputValues[])
 {
-		float $MultEquals = $MultFloat[0];
+		float $MultEquals = $InputValues[0];
 		
-		for ( $i = 0; $i < size($MultFloat); $i++)
+		for ( $i = 0; $i < size($InputValues); $i++)
 		{
-			$MultEquals *= $MultFloat[$i];
+			$MultEquals *= $InputValues[$i];
 		}
 		
 		return $MultEquals;
 }
 
-float $MultFloat = Multiplication({1,1,2,3,5,8,13});
-
-print $MultFloat;
-
-
-
 //Divide Array of Numbers Apart
 
-proc float Division(float $DivFloat[])
+global proc float Division(float $InputValues[])
 {
-		float $DivEquals = $DivFloat[0];
+		float $DivEquals = $InputValues[0];
 		
-		for ( $i = 1; $i < size($DivFloat); $i++)
+		for ( $i = 1; $i < size($InputValues); $i++)
 		{
-			$DivEquals /= $DivFloat[$i];
+			$DivEquals /= $InputValues[$i];
 		}
 		
 		return $DivEquals;
 }
 
-float $DivFloat = Division({1,1,2,3,5,8,13});
-
-print $DivFloat;
-
 //Raise number to power of Number)
 
-proc float PowerMult(float $BaseFloat, float $PowerFloat)
+global proc float Power(float $BaseFloat, float $InputValues)
 {
 	float $PowEquals = $BaseFloat;
 	
-	for ($i = 1; $i < $PowerFloat; $i++)
+	for ($i = 1; $i < $InputValues; $i++)
 	{
 		$PowEquals *= $BaseFloat;
 	}
 	return $PowEquals;	
 }
 
-float $PowerFloat = PowerMult (10,2);
-
-print $PowerFloat;
-
 //Average of sum of floats
 
-proc float Average(float $AllFloats[])
+global proc float Mean(float $InputValues[])
 {
-	float $FloatsEquals = $AllFloats[0];
+	float $FloatsEquals = $InputValues[0];
 	
-	for ($i = 1; $i < size($AllFloats); ++$i)
+	for ($i = 1; $i < size($InputValues); ++$i)
 	{
-		$FloatsEquals += $AllFloats[$i];
+		$FloatsEquals += $InputValues[$i];
 	}
 	
-	$FloatsEquals /= size($AllFloats);
+	$FloatsEquals /= size($InputValues);
 	
 	return $FloatsEquals;
 }
 
-float $AllFloats = Average({1,1,2,3,5,8,13});
-
-print $AllFloats;
-
 //Find median of array
 	
-proc float Median(float $FindMedianFloat[])
+global proc float Median(float $InputValues[])
 {
-	float $SortedFloats[] = `sort $FindMedianFloat`;
+	float $SortedFloats[] = `sort $InputValues`;
 
 	float $MedianEquals;
 	
 	if (size($SortedFloats) % 2 == 1)
 	{
-		$MedianEquals = $SortedFloats[size($FindMedianFloat) / 2];
+		$MedianEquals = $SortedFloats[size($InputValues) / 2];
 	}
 	else
 	{
-		$MedianEquals = ($SortedFloats[(size($FindMedianFloat) + 1) / 2] + $SortedFloats[(size($FindMedianFloat) - 1) / 2]);
+		$MedianEquals = ($SortedFloats[(size($InputValues) + 1) / 2] + $SortedFloats[(size($InputValues) - 1) / 2]);
 	}
 	
 	return $MedianEquals;
 }
 
-float $FindMedianFloat = Median({1,5,2,8,13,1,3});
-
-print $FindMedianFloat;
-
 //Find Mode of array
 
-proc float Mode(float $FindModeFloat[])
+global proc float Mode(float $InputValues[])
 {
-	float $ModeEquals = $FindModeFloat[0];
+	float $ModeEquals = $InputValues[0];
 	
 	int $CountFloatFrequency = 0;
 	
 	int $HighestFloatFrequency = 0;
 	
-	for($i = 0; $i < size($FindModeFloat); ++$i)
+	for($i = 0; $i < size($InputValues); ++$i)
 	{
 		$CountFloatFrequency = 0;
 		
-		for ($CheckCurrentFloat = $i; $CheckCurrentFloat < size($FindModeFloat); ++$CheckCurrentFloat)
+		for ($CheckCurrentFloat = $i; $CheckCurrentFloat < size($InputValues); ++$CheckCurrentFloat)
 		{
-			if ($FindModeFloat[$i] == $FindModeFloat[$CheckCurrentFloat])
+			if ($InputValues[$i] == $InputValues[$CheckCurrentFloat])
 			{
 				$CountFloatFrequency++;
 				
 				if ($CountFloatFrequency >= $HighestFloatFrequency)
 				{
 					$HighestFloatFrequency = $CountFloatFrequency;
-					$ModeEquals = $FindModeFloat[$i];
+					$ModeEquals = $InputValues[$i];
 				}								
 			}
 		}
@@ -165,6 +134,72 @@ proc float Mode(float $FindModeFloat[])
 		return $ModeEquals;
 	}
 }
-float $FindModeFloat = Mode({1,5,2,8,13,1,3});
 
-print $FindModeFloat;
+//Full Calculator
+
+global proc float Calculator(float $InputValues[], string $CalculateThis)
+{
+	
+	float $OutputValue = 0;
+	
+	//Calculate Add
+	if ($CalculateThis == "+")
+	{
+		$OutputValue = Addition($InputValues);
+		print ("\nThe Addition Function Equals " + $OutputValue);
+	}
+	
+	//Calculate Subtract
+	if ($CalculateThis == "-")
+	{
+		$OutputValue = Subtraction($InputValues);
+		print ("\nThe Subtraction Function Equals " + $OutputValue);
+	}
+	
+	//Calculate Multiply
+		if ($CalculateThis == "*")
+	{
+		$OutputValue = Multiplication($InputValues);
+		print ("\nThe Multiplication Function Equals " + $OutputValue);
+	}
+	
+	//Calculate Diivide
+		if ($CalculateThis == "/")
+	{
+		$OutputValue = Division($InputValues);
+		print ("\nThe Division Function Equals " + $OutputValue);
+	}
+	
+	//Calculate Power
+		if ($CalculateThis == "^")
+	{
+		$OutputValue = Power($InputValues[0] , $InputValues[1]);
+		print ("\nThe Power Function Equals " + $OutputValue);
+	}
+	
+	//Calculate Mean
+		if ($CalculateThis == "M")
+	{
+		$OutputValue = Mean($InputValues);
+		print ("\nThe Mean Function Equals " + $OutputValue);
+	}
+	
+	//Calculate Median
+	if ($CalculateThis == "V")
+	{
+		$OutputValue = Median($InputValues);
+		print ("\nThe Median Function Equals " + $OutputValue);
+	}
+	
+	//Calculate Mode
+		if ($CalculateThis == ">")
+	{
+		$OutputValue = Mode($InputValues);
+		print ("\nThe Mode Function Equals " + $OutputValue);
+	}
+	
+	return $OutputValue;
+
+}
+
+Calculator({1,5,2,8,13,1,3}, "+");
