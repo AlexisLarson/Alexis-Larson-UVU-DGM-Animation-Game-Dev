@@ -1,0 +1,17 @@
+//Color Control script
+{
+	proc ControlColor(int $ColorValue)
+	{
+		string $SelectedObjs[] = `pickWalk -d down`;
+		
+		for ($control in $SelectedObjs)
+			{
+				setAttr ($control + ".overrideEnabled") 1;
+				setAttr ($control + ".overrideColor") ($ColorValue);
+			}
+		
+	}
+	
+}
+
+ControlColor(31);

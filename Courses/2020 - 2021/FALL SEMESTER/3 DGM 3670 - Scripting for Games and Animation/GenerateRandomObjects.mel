@@ -1,0 +1,42 @@
+{
+	//Generate random function
+	proc GenerateRandomObjs(int $ObjCount, float $XMin, float $XMax, float $YMin, float $YMax, float $ZMin, float $ZMax)
+	{
+		//Random Location Variable (reset on function run)
+		vector $RandomLocation = <<0,0,0>>;
+		//Previous Location Container
+		vector $LastUsedLocation = <<0,0,0>>;
+		//Array of vectors that have been used (reset on function run)
+		vector $ExpendedLocations[];
+	
+
+		//For every obj generated do this function
+		for ($i = 0; $i < $ObjCount; $i++)
+		{
+			$RandomLocation = << rand($XMin , $XMax) , rand($YMin , $YMax) , rand($ZMin , $ZMax)>>;
+			
+			//check against all used locations
+			/* for ($RandomLocation == $ExpendedLocations[$i]; )
+			{
+				$RandomLocation = << rand($XMin , $XMax) , rand($YMin , $YMax) , rand($ZMin , $ZMax)>>;
+			}*/
+			
+			//Pick New Random Location
+			if ($RandomLocation == $LastUsedLocation)
+			{
+				while($RandomLocation == $LastUsedLocation)
+				{
+					$RandomLocation = << rand($XMin , $XMax) , rand($YMin , $YMax) , rand($ZMin , $ZMax)>>;
+				}
+			}
+			
+			float $x = $RandomLocation.x;
+			float $y = $RandomLocation.y; 
+			float $z = $RandomLocation.z;
+			duplicate -rr;
+			move -ws  $x $y $z;
+			$LastUsedLocation = $RandomLocation;
+		}
+	}
+}
+GenerateRandomObjs( 10 , -10 , 10 ,  -10 , 10 , -10 , 10)
