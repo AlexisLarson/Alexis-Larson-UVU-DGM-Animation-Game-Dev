@@ -32,6 +32,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/MayaDevKit_2020/py" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alexis Larson\Documents\Git Repos\Alexis-Larson-UVU-DGM-Animation-Game-Dev\Courses\2020 - 2021\FALL SEMESTER\3 DGM 3670 - Scripting for Games and Animation\Python Set Up\Default" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -57,7 +62,8 @@
       <workItem from="1603407708521" duration="338000" />
       <workItem from="1603408056427" duration="3023000" />
       <workItem from="1603734352933" duration="4636000" />
-      <workItem from="1605131950914" duration="809000" />
+      <workItem from="1605131950914" duration="10428000" />
+      <workItem from="1605225853574" duration="7550000" />
     </task>
     <servers />
   </component>
