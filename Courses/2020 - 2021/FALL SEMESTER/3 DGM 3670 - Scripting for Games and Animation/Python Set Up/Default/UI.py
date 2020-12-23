@@ -126,58 +126,62 @@ class myUI():
             collapse=True)
         self.Tool_2_Row_0 = cmds.rowLayout(
             parent=self.Tool_2,
-            numberOfColumns=4,
-            adjustableColumn=True)
+            numberOfColumns=2)
         self.Tool_2_Column_0 = cmds.columnLayout(
-            parent=self.Tool_2_Row_0,
-            adjustableColumn=True)
+            parent=self.Tool_2_Row_0)
         self.Tool_2_Column_1 = cmds.columnLayout(
-            parent=self.Tool_2_Row_0,
-            adjustableColumn=True)
+            parent=self.Tool_2_Row_0)
         self.Tool_2_Row_1 = cmds.rowLayout(
             parent=self.Tool_2,
-            numberOfColumns=4,
-            adjustableColumn=True)
+            numberOfColumns=2)
         self.Tool_2_Column_2 = cmds.columnLayout(
-            parent=self.Tool_2_Row_1,
-            adjustableColumn=True)
+            parent=self.Tool_2_Row_1)
         self.Tool_2_Column_3 = cmds.columnLayout(
-            parent=self.Tool_2_Row_1,
-            adjustableColumn=True)
+            parent=self.Tool_2_Row_1)
         self.Tool_2_Row_2 = cmds.rowLayout(
             parent=self.Tool_2,
-            numberOfColumns=4,
-            adjustableColumn=True)
+            numberOfColumns=2)
         self.Tool_2_Column_4 = cmds.columnLayout(
-            parent=self.Tool_2_Row_2,
-            adjustableColumn=True)
+            parent=self.Tool_2_Row_2)
         self.Tool_2_Column_5 = cmds.columnLayout(
-            parent=self.Tool_2_Row_2,
-            adjustableColumn=True)
+            parent=self.Tool_2_Row_2)
         # Tool UI/Functions #
-        cmds.button(
+        cmds.iconTextButton(
             parent=self.Tool_2_Column_0,
-            label="Freeze Transforms",
+            style='iconOnly',
+            image='FreezeTransform.png',
+            imageOverlayLabel="FzTrans",
             c=lambda *x: self.freezeTransforms())
-        cmds.button(
+        cmds.iconTextButton(
             parent=self.Tool_2_Column_1,
-            label="Delete History",
+            style='iconOnly',
+            image='DeleteHistory.png',
+            imageOverlayLabel="DltHis",
             c=lambda *x: self.deleteHistory())
-        cmds.button(
+        cmds.iconTextButton(
             parent=self.Tool_2_Column_2,
-            label="Parent Group",
-            c=lambda *x: self.parentGroup())
-        cmds.button(
-            parent=self.Tool_2_Column_3,
-            label="Parent Scale Restrain",
-            c=lambda *x: self.parentScaleRestrain())
-        cmds.button(
-            parent=self.Tool_2_Column_4,
-            label="Toggle Local Rotation Axis",
+            style='iconOnly',
+            image='CenterPivot.png',
+            imageOverlayLabel="SeeAxs",
             c=lambda *x: self.toggleLocalRotationAxis())
-        cmds.button(
+        cmds.iconTextButton(
+            parent=self.Tool_2_Column_3,
+            style='iconOnly',
+            image='polyUnite.png',
+            imageOverlayLabel="ParGrp",
+            c=lambda *x: self.parentGroup())
+        cmds.iconTextButton(
+            parent=self.Tool_2_Column_4,
+            style='iconOnly',
+            image='parentConstraint.png',
+            imageOverlayLabel="1-1",
+            c=lambda *x: self.parentScaleRestrain1())
+        cmds.iconTextButton(
             parent=self.Tool_2_Column_5,
-            label="Extra Button")
+            style='iconOnly',
+            image='parentConstraint.png',
+            imageOverlayLabel="50/50",
+            c=lambda *x: self.parentScaleRestrain2())
         # Tool End #
 
         # template TOOL #: TITLE #
@@ -247,10 +251,61 @@ class myUI():
             cmds.move(x, y, z, worldSpace=True)
 
     def freezeTransforms(self):
+        selectedItems = cmds.ls(selection=True)
+        cmds.FreezeTransformations(0)
+
     def deleteHistory(self):
+        selectedItems = cmds.ls(selection = True)
+        cmds.delete(ch = True)
+
     def parentGroup(self):
-    def parentScaleRestrain(self):
+        selectedItems = cmds.ls(selection=True)
+        for item in selectedItems:
+            group = cmds.group(empty = True, name = (item + "_Grp"))
+            cmds.matchTransform(group,item)
+            cmds.parent(item,group)
+
     def toggleLocalRotationAxis(self):
+        selectedItems = cmds.ls(selection=True)
+        for item in selectedItems:
+            if cmds.getAttr(item +'.displayLocalAxis') == 0:
+                cmds.setAttr(item + '.displayLocalAxis',1)
+                cmds.setAttr(item + '.jointOrientX', channelBox=True)
+                cmds.setAttr(item + '.jointOrientY', channelBox=True)
+                cmds.setAttr(item + '.jointOrientZ', channelBox=True)
+                cmds.setAttr(item + '.displayLocalAxis', channelBox=True)
+            else:
+                cmds.setAttr(item + '.displayLocalAxis',0)
+                cmds.setAttr(item + '.jointOrientX', channelBox=False)
+                cmds.setAttr(item + '.jointOrientY', channelBox=False)
+                cmds.setAttr(item + '.jointOrientZ', channelBox=False)
+                cmds.setAttr(item + '.displayLocalAxis', channelBox=False)
+
+    def parentScaleRestrain1(self):
+        selectedItems = cmds.ls(selection=True)
+        parents = []
+        children = []
+        for i in range(0,len(selectedItems)):
+            if i % 2:
+                parents.append(selectedItems[i])
+            else:
+                children.append(selectedItems[i])
+        for pair in range(0,len(selectedItems)/2):
+            cmds.parentConstraint(parents[pair],children[pair])
+            cmds.scaleConstraint(parents[pair],children[pair])
+
+    def parentScaleRestrain2(self):
+        selectedItems = cmds.ls(selection=True)
+        parents = []
+        children = []
+        for i in range(0,len(selectedItems)):
+            if i <= len(selectedItems)/2 -1:
+                parents.append(selectedItems[i])
+            else:
+                children.append(selectedItems[i])
+        for pair in range(0,len(selectedItems)/2):
+            cmds.parentConstraint(parents[pair],children[pair])
+            cmds.scaleConstraint(parents[pair], children[pair])
 
     def delete(self):
         if cmds.window(self.my_window, exists=True):
