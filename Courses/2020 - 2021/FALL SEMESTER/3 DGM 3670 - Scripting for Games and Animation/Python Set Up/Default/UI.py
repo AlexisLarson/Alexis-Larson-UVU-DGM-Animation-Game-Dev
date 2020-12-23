@@ -117,6 +117,68 @@ class myUI():
             height=20)
 
         # Tool End #
+        # template TOOL #: MISC TOOLS #
+        # Tool Start/Layout #
+        self.Tool_2 = cmds.frameLayout(
+            parent=self.windowLayout,
+            label="Tools For Final",
+            collapsable=True,
+            collapse=True)
+        self.Tool_2_Row_0 = cmds.rowLayout(
+            parent=self.Tool_2,
+            numberOfColumns=4,
+            adjustableColumn=True)
+        self.Tool_2_Column_0 = cmds.columnLayout(
+            parent=self.Tool_2_Row_0,
+            adjustableColumn=True)
+        self.Tool_2_Column_1 = cmds.columnLayout(
+            parent=self.Tool_2_Row_0,
+            adjustableColumn=True)
+        self.Tool_2_Row_1 = cmds.rowLayout(
+            parent=self.Tool_2,
+            numberOfColumns=4,
+            adjustableColumn=True)
+        self.Tool_2_Column_2 = cmds.columnLayout(
+            parent=self.Tool_2_Row_1,
+            adjustableColumn=True)
+        self.Tool_2_Column_3 = cmds.columnLayout(
+            parent=self.Tool_2_Row_1,
+            adjustableColumn=True)
+        self.Tool_2_Row_2 = cmds.rowLayout(
+            parent=self.Tool_2,
+            numberOfColumns=4,
+            adjustableColumn=True)
+        self.Tool_2_Column_4 = cmds.columnLayout(
+            parent=self.Tool_2_Row_2,
+            adjustableColumn=True)
+        self.Tool_2_Column_5 = cmds.columnLayout(
+            parent=self.Tool_2_Row_2,
+            adjustableColumn=True)
+        # Tool UI/Functions #
+        cmds.button(
+            parent=self.Tool_2_Column_0,
+            label="Freeze Transforms",
+            c=lambda *x: self.freezeTransforms())
+        cmds.button(
+            parent=self.Tool_2_Column_1,
+            label="Delete History",
+            c=lambda *x: self.deleteHistory())
+        cmds.button(
+            parent=self.Tool_2_Column_2,
+            label="Parent Group",
+            c=lambda *x: self.parentGroup())
+        cmds.button(
+            parent=self.Tool_2_Column_3,
+            label="Parent Scale Restrain",
+            c=lambda *x: self.parentScaleRestrain())
+        cmds.button(
+            parent=self.Tool_2_Column_4,
+            label="Toggle Local Rotation Axis",
+            c=lambda *x: self.toggleLocalRotationAxis())
+        cmds.button(
+            parent=self.Tool_2_Column_5,
+            label="Extra Button")
+        # Tool End #
 
         # template TOOL #: TITLE #
         # Tool Start/Layout #
@@ -138,7 +200,7 @@ class myUI():
         cmds.showWindow(self.my_window)
 
     def getUserInputRenamer(self):
-        rename_value = cmds.textField(self.getUserInputRenamer, q=True, text=True)
+        rename_value = cmds.textField(self.userInput, q=True, text=True)
         self.Renamer(name=rename_value)
 
     def getUserInputRandGen(self):
@@ -170,17 +232,25 @@ class myUI():
     def RandomGenerator(self, numObjs, xMin, xMax, yMin, yMax, zMin, zMax):
         randomLocation = (0, 0, 0)
         lastLocation = (0, 0, 0)
+        print numObjs, xMin, xMax, yMin, yMax, zMin, zMax
 
         for number in range(numObjs):
-            randomLocation = (random.randrange(xMin, xMax), random.randrange(yMin, yMax), random.randrange(zMin, zMax))
+            randomLocation = (random.uniform(xMin, xMax), random.uniform(yMin, yMax), random.uniform(zMin, zMax))
+            print randomLocation
             while random == lastLocation:
-                randomLocation = (random.randrange(xMin, xMax), random.randrange(yMin, yMax), random.randrange(zMin, zMax))
+                randomLocation = (random.uniform(xMin, xMax), random.uniform(yMin, yMax), random.uniform(zMin, zMax))
             lastLocation = randomLocation
             cmds.duplicate(returnRootsOnly=True)
             x = randomLocation[0]
             y = randomLocation[1]
             z = randomLocation[2]
             cmds.move(x, y, z, worldSpace=True)
+
+    def freezeTransforms(self):
+    def deleteHistory(self):
+    def parentGroup(self):
+    def parentScaleRestrain(self):
+    def toggleLocalRotationAxis(self):
 
     def delete(self):
         if cmds.window(self.my_window, exists=True):
