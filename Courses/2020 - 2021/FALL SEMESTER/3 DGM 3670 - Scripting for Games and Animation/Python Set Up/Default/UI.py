@@ -4,7 +4,7 @@ import random
 
 class myUI():
     def __init__(self):
-        self.my_window = "AL Toolbox"
+        self.my_window = "AL_Toolbox"
 
     def createWindow(self):
         # Delete Duplicate Windows #
