@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed219dfd-ba97-46d9-bb05-95295ad08c29" name="Default Changelist" comment="" />
+    <list default="true" id="ed219dfd-ba97-46d9-bb05-95295ad08c29" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../SPRING SEMESTER/3 DGM 3660 Advanced Rigging/Tako Rig.ma" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SPRING SEMESTER/3 DGM 3660 Advanced Rigging/Tako Rig.ma" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +72,7 @@
       <workItem from="1607453826007" duration="31684000" />
       <workItem from="1607625978078" duration="922000" />
       <workItem from="1608693275111" duration="4934000" />
+      <workItem from="1615686398145" duration="600000" />
     </task>
     <servers />
   </component>
